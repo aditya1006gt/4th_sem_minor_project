@@ -5,6 +5,7 @@ const authRoutes = require("./routes/authRoutes");
 const eventRoutes = require("./routes/eventRoutes");
 const noteRoutes = require("./routes/noteRoutes");
 const forumRoutes = require("./routes/forumRoutes");
+const researchPaperRoutes = require("./routes/researchPaperRoutes");
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/events", eventRoutes);
 app.use("/api/notes", noteRoutes);
 app.use("/api/forum", forumRoutes);
+app.use("/api/research-papers", researchPaperRoutes);
 
 app.use((err, req, res, next) => {
   if (err.name === "MulterError") {
