@@ -32,6 +32,9 @@ const Layout = () => {
             <NavLink to="/events" className={navClassName}>
               Events
             </NavLink>
+            <NavLink to="/research-papers" className={navClassName}>
+              Research Papers
+            </NavLink>
             {["club_admin", "professor"].includes(user?.role) && (
               <NavLink to="/event-admin" className={navClassName}>
                 Event Control

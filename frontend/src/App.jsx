@@ -8,6 +8,8 @@ import NotesPage from "./pages/NotesPage";
 import EventsPage from "./pages/EventsPage";
 import EventAdminPage from "./pages/EventAdminPage";
 import Community from "./pages/Community";
+import ResearchPapersPage from "./pages/ResearchPapersPage";
+import ResearchPaperDetailPage from "./pages/ResearchPaperDetailPage";
 import { useAuth } from "./hooks/useAuth";
 
 const App = () => {
@@ -44,6 +46,8 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+        <Route path="research-papers" element={<ResearchPapersPage />} />
+        <Route path="research-papers/:paperId" element={<ResearchPaperDetailPage />} />
       </Route>
       <Route path="*" element={<Navigate to={isAuthenticated ? "/" : "/login"} replace />} />
     </Routes>
