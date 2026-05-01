@@ -11,7 +11,7 @@ import Community from "./pages/Community";
 import ResearchPapersPage from "./pages/ResearchPapersPage";
 import ResearchPaperDetailPage from "./pages/ResearchPaperDetailPage";
 import { useAuth } from "./hooks/useAuth";
-
+ 
 const App = () => {
   // You can comment this out or ignore it for now
   // const { isAuthenticated } = useAuth(); 
