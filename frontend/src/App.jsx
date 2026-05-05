@@ -15,12 +15,12 @@ import { useAuth } from "./hooks/useAuth";
 const App = () => {
   // You can comment this out or ignore it for now
   // const { isAuthenticated } = useAuth(); 
-
-  return (
+ 
+  return ( 
     <Routes>
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
-      
+       
       {/* 1. Removed ProtectedRoute wrapper here */}
       <Route path="/" element={<Layout />}>
         <Route index element={<DashboardPage />} />
@@ -40,6 +40,6 @@ const App = () => {
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
-};
+}; 
 
-export default App;
+export default App; 
